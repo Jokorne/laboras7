@@ -1,0 +1,63 @@
+        h1, h2, h3 {
+          font-family: 'Open Sans', sans-serif;
+          color: #444444;
+          font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    text-align: center;
+        }
+        a {
+            color: #51cdbe;
+  text-decoration: none;
+}
+
+a:hover {
+    color: #222222;
+  text-decoration: none;
+  transition:all 0.3s ease-in-out 0s;
+}
+    
+        p {
+            font-family: "Raleway", sans-serif;
+            margin-top: 50px;
+        }
+        header {
+  background-color: rgb(236, 232, 232);
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    position: relative;
+    margin: 0 10px;
+    text-align: center;
+}
+header nav ul li a {
+  text-decoration: none;
+  position: relative;
+}
+
+header nav ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #34b7a7;
+  transition: background-color 0.3s ease;
+}
+header nav ul li a:hover::before {
+    width: 50%;
+}
+div, section {
+    border: 1px dashed #999;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: #6f6d6d;
+}
