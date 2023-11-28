@@ -1,10 +1,10 @@
-<!--Kornelijus Jocys, EIF-22-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="#" type="text/css" href="#">
     <title>Puslapis</title>
+    <link rel="stylesheet" type="text/css" href="Untitled-2.css">
+    <link rel="stylesheet" type="text/css" href="print.css" media="print">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
                 <li><a href="#about">Apie</a></li>
                 <li><a href="#resume">CV</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#paslaugos">Paslaugos</a></li>
+                <li><a href="#Paslaugos">Paslaugos</a></li>
             </ul>
         </nav>
     </header>
@@ -21,13 +21,16 @@
     <section id="about">
         <h2>Apie mane</h2>
         <p>Čia yra informacija apie mane.</p>
-        <img src="logo_vgtu.png" alt="About Me" height="200" width="600">
+        <img src="logo_vgtu.png" alt="VGTU Logo" height="200" width="600">
     </section>
 
     <section id="resume">
         <h2>CV</h2>
         <p>Darbo patirtis.</p>
-        <img src="Herbas.png" alt="CV" height="400" width="400">
+        <img src="Herbas.png" alt="Herbas Logo" height="400" width="400">
+        <div class="print-button">
+            <button onclick="window.print()">Print</button>
+          </div>
     </section>
 
     <section id="portfolio">
@@ -37,7 +40,7 @@
 
     <section id="Paslaugos">
         <h2>Paslaugos</h2>
-        <video width="320" height="240" autoplay>
+        <video width="320" height="240" controls>
             <source src="dvd.mp4" type="video/mp4">
         </video>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/mwKJfNYwvm8" title="MrBeast"></iframe>
