@@ -15,3 +15,12 @@ p {
     font-size: 16px;
     font-weight: normal;
 }
+
+@media print {
+
+    video,
+    iframe,
+    audio {
+        display: none !important;
+    }
+}
