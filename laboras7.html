@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="print.css" media="print">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="clock.js"></script>
+    <script src="duomenys.js"></script>
 </head>
 <body>
     <header>
@@ -58,10 +60,56 @@
             <!-- /cdot padaro taska -->
             <!-- int sudaro kita integrala o {partial D po integralu paraso dvi raides}-->
         </div>
-        <svg width="100" height="100">
-            <circle cx="50" cy="50" r="40" stroke="gray" stroke-width="3" fill="cyan" />
+            <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40" stroke="gray" stroke-width="3" fill="cyan">
+                    <animate attributeName="fill" dur="2s" repeatCount="indefinite"
+                        values="cyan;blue;white;cyan;blue" />
+            </circle>
             </svg>
     </section>
+
+    <section id="Duomenys">
+        <div class="data-heading">
+            <h2>Duomenys</h2>
+        </div>
+        <div class="data-container">
+        <form id="contactForm">
+            <label for="firstName">Vardas:</label>
+            <input type="text" id="firstName" required><br><br>
+    
+            <label for="lastName">Pavardė:</label>
+            <input type="text" id="lastName" required><br><br>
+    
+            <label for="email">El. paštas:</label>
+            <input type="email" id="email" required><br><br>
+    
+            <label for="phone">Telefonas:</label>
+            <input type="tel" id="phone" required><br><br>
+    
+            <label for="address">Adresas:</label>
+            <input type="text" id="address" required><br><br>
+    
+            <label for="feature1">Kelintame kurse mokoties:</label>
+            <input type="number" id="feature1" required><br><br>
+    
+            <label for="feature2">Kelintame semestre mokoties:</label>
+            <input type="number" id="feature2" required><br><br>
+    
+            <label for="feature3">Kiek dalykų turite šį semestrą:</label>
+            <input type="number" id="feature3" required><br><br>
+    
+            <label for="feature4">Kiek jums metų:</label>
+            <input type="number" id="feature4" required><br><br>
+    
+            <label for="feature5">Kiek vaikų turite:</label>
+            <input type="number" id="feature5" required><br><br>
+    
+            <button type="button" id="submitBtn" onclick="submitForm()">Siųsti</button>
+        </form>
+        <div id="contactInfo"></div>
+        <div id="vidurkis"></div>
+    </div>
+</section>
 
     <section id="Paslaugos">
         <h2>Paslaugos</h2>
@@ -97,6 +145,5 @@
             </div>
         </div>
     </footer>
-    <script src="clock.js"></script>
 </body>
 </html>
